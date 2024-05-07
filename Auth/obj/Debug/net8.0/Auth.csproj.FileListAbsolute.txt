@@ -28,3 +28,4 @@
 /Users/b/Projects/Auth/Auth/obj/Debug/net8.0/Auth.pdb
 /Users/b/Projects/Auth/Auth/obj/Debug/net8.0/Auth.genruntimeconfig.cache
 /Users/b/Projects/Auth/Auth/obj/Debug/net8.0/ref/Auth.dll
+/Users/b/Projects/Auth/Auth/obj/Debug/net8.0/Auth.sourcelink.json

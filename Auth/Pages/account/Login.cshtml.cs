@@ -26,11 +26,17 @@ namespace MyApp.Namespace
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, "admin"),
-                    new Claim(ClaimTypes.Email, "admin@mywebsite.com")
+                    new Claim(ClaimTypes.Email, "admin@mywebsite.com"),
+                    new Claim(ClaimTypes.Role, "HR"),
+                    new Claim(ClaimTypes.Role, "Admin"),
+                    new Claim(ClaimTypes.Role, "Manager"),
+                    new Claim("StartDate", "2024-01-02")
                 };
                 var claimsIdentity = new ClaimsIdentity(claims, "MyCookieAuth");
                 ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+
                 await HttpContext.SignInAsync("MyCookieAuth", claimsPrincipal);
+
                 return RedirectToPage("/Index");
             }
 

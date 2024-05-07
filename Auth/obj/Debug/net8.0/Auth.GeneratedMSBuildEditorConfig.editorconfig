@@ -18,12 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/b/Projects/Auth/Auth
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/b/Projects/Auth/Auth/Pages/account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWNjb3VudC9BY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/b/Projects/Auth/Auth/Pages/account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/b/Projects/Auth/Auth/Pages/account/logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvYWNjb3VudC9sb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/b/Projects/Auth/Auth/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b/Projects/Auth/Auth/Pages/HR.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSFIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b/Projects/Auth/Auth/Pages/HRM.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSFJNLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/b/Projects/Auth/Auth/Pages/Index.cshtml]
@@ -32,6 +48,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/b/Projects/Auth/Auth/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b/Projects/Auth/Auth/Pages/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b/Projects/Auth/Auth/Pages/Shared/_LoginStatusPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Mb2dpblN0YXR1c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/b/Projects/Auth/Auth/Pages/Shared/_ValidationScriptsPartial.cshtml]

@@ -25,7 +25,13 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/HRM">HRM</a>
+                        </li>
                     </ul>
+                </div>
+                <div class="mr-2">
+                    <partial name="_LoginStatusPartial" />
                 </div>
             </div>
         </nav>
@@ -40,6 +46,7 @@
         <div class="container">
             &copy; 2024 - Auth - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
+        
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

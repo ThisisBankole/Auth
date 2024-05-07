@@ -1,3 +1,8 @@
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
+using Auth.Authorisation;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,9 +15,18 @@ builder.Services.AddAuthentication("MyCookieAuth")
     .AddCookie("MyCookieAuth", config =>
     {
         config.Cookie.Name = "MyCookieAuth";
-        // config.LoginPath = "/account/login";
+        config.LoginPath = "/account/login";
+        config.AccessDeniedPath = "/account/AccessDenied";
     });
 
+builder.Services.AddAuthorization( options => {
+    options.AddPolicy("MustBeAdmin", policy => policy.RequireClaim(ClaimTypes.Role, "Admin"));
+    options.AddPolicy("MustBelongToHR", policy => policy.RequireClaim(ClaimTypes.Role, "HR"));
+    options.AddPolicy("HRManager", policy => policy.RequireClaim(ClaimTypes.Role, "HR").RequireClaim(ClaimTypes.Role, "Manager").AddRequirements(new HRManagerProbationRequirement(3)));
+
+});
+
+builder.Services.AddSingleton<IAuthorizationHandler, HRManagerProbationRequirement.HRManagerProbationRequirementHandler>();
 
 var app = builder.Build();
 
